@@ -7,8 +7,8 @@ Function for getting items from a directory in the pages dir and generating stat
 - feed build with list of articles
 
 ```
-//next.config.js
-//import or cp function here
+next.config.js
+import or cp function here
 
 
 module.exports = {
