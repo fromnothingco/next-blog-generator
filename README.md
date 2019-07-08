@@ -2,7 +2,15 @@
 
 Function for getting items from a directory in the pages dir and generating static files. 
 
+## Todo
+- make this an npm module
+- feed build with list of articles
+
 ```
+//next.config.js
+//import or cp function here
+
+
 module.exports = {
   exportPathMap: async function(
     defaultPathMap,
