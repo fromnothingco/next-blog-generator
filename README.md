@@ -12,6 +12,7 @@ import or cp function here
 
 
 module.exports = {
+  exportTrailingSlash: true,
   exportPathMap: async function(
     defaultPathMap,
     { dev, dir, outDir, distDir, buildId }
