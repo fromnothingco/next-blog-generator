@@ -3,7 +3,7 @@ const util = require("util");
 
 const readdir = util.promisify(fs.readdir);
 
-const files = async dir => {
+const articles = async dir => {
   const files = await readdir(`./pages/${dir}`);
   return files.reduce((total, current) => {
     total[`./${dir}/${current}/index.html`] = {
@@ -12,3 +12,5 @@ const files = async dir => {
     return total;
   }, {});
 };
+
+export default articles
